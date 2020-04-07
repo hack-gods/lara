@@ -1,0 +1,36 @@
+name: lara
+description: Chat por enquanto sem bot
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  dio: ^3.0.9
+  flutter_mobx: ^1.1.0
+  mobx: ^1.1.1
+  flutter_modular: ^1.0.0
+  flutter:
+    sdk: flutter
+  google_maps_flutter: ^0.5.25+1
+  bubble: ^1.1.9+1
+  web_socket_channel: ^1.1.0
+  flutter_google_places:
+  location:
+
+dev_dependencies:
+  mockito: ^4.1.1
+  mobx_codegen: ^1.0.3
+  build_runner: ^1.8.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+scripts:
+  mobx_watch: flutter pub run build_runner watch --delete-conflicting-outputs
+  mobx_build: flutter pub run build_runner build --delete-conflicting-outputs
+  apk_build: flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi
+  appbundle_build: flutter build appbundle --target-platform android-arm,android-arm64,android-x64
