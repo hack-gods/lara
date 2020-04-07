@@ -6,6 +6,9 @@ Interface gráfica para android e IOS para o chat-bot 'Lara'
 ## Getting Started
 
 ## Instruções para compilação
+
+#### 	- Os binários para android já se encontram compilados na pasta "release"
+
 #### 	- Requisitos
 	- Ter o [flutter](https://flutter.dev/) intalado 
 
